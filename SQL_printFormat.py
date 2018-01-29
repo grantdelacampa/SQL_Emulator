@@ -27,14 +27,14 @@ Data output processing for a SQL emulator written in python. Computes an invisib
         data format is by row NOT Column
         
     Sample Input:
-    printData("Family", ["fname", "lname", "age", "association"], [["Larry", "Brandon", "Joe"], ["Green", "Turner", "Millholen"], ["60", "17", " "], ["Grandpa", "Brother", "step-dad"]])
+    printData("Family", ["fname", "age", "association"], [["Larry", "Brandon", "Joe"], ["60", "17", " "], ["Grandpa", "Brother", "step-dad"]])
     
     Sample Output:
-    | fname        | lname        | age          | association  | 
-    + --------------------------------------------------------- +
-    | Larry        | Green        | 60           | Grandpa      | 
-    | Brandon      | Turner       | 17           | Brother      | 
-    | Joe          | Millholen    |              | step-dad     | 
+    | fname        | age          | association  | 
+    + ------------------------------------------ +
+    | Larry        | 60           | Grandpa      | 
+    | Brandon      | 17           | Brother      | 
+    | Joe          |              | step-dad     | 
     
               
 """
