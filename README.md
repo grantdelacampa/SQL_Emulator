@@ -1,2 +1,2 @@
 # SQL_Emulator
-A SQL emulator written in PHP
+A SQL emulator written in Python
