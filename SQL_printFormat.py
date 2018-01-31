@@ -108,5 +108,5 @@ def printData(name, headers, data):
         print "Error printing data, Data out of bounds"
     
 #test call:
-printData("printTest", ["column1", "column2", "column3"],[["c1_data_1", " ", " "], ["c2_data_1", "c2_data_2", "c2_data_3"],["c3_data_1", " ", "c3_data_2
+printData("printTest", ["column1", "column2", "column3"],[["c1_data_1", " ", " "], ["c2_data_1", "c2_data_2", "c2_data_3"],["c3_data_1", " ", "c3_data_2]])
 
