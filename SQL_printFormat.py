@@ -36,7 +36,7 @@ Data output processing for a SQL emulator written in python. Computes an invisib
     | Brandon      | 17           | Brother      | 
     | Joe          |              | step-dad     | 
     
-              
+  print from lines 102 - 109 can easily be changed to send data to a txt file or some other output method
 """
 
 
@@ -44,6 +44,7 @@ def printData(name, headers, data):
     #verify the data will be in range of the columns
     #i.e. there isnt 5 sets of data and 3 columns
     if len(data) <= len(headers):
+        #since the data is in range create places holders for parameter info
         printMatrix = []
         rowLength = 0
         columnLength = 0
@@ -91,8 +92,11 @@ def printData(name, headers, data):
         print ""
             
         #prints the break between the header items and the rows
-        #TODO fix this
-        print "+", "-" * ((columnLength + 1) * offsetValue), "+"
+        print "+",         
+        lineBreak = '-' * (offsetValue + 1)        
+        for m in range(columnLength ):
+            print lineBreak, '+',
+        print""
      
         #iterates through the rows in the printMatrix
         for row in printMatrix:
